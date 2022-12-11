@@ -206,7 +206,7 @@ io.on("connection", (socket) => {
 });
 
 function createRound(id, room) {
-  let time = 5000 + Math.round(Math.random() * ((9 - rooms[room].roundNum) * 1500));
+  let time = 15000 + Math.round(((9 - rooms[room].roundNum) * 3000));
   return {
     decider: id,
     roomID: room,
